@@ -1,0 +1,15 @@
+{
+    "files": [
+        "./src/**",
+        "./test/**"
+    ],
+    "eslint": {
+        "env": {
+            "es6": true
+        },
+        "rules": {
+            "no-confusing-arrow": false
+        }
+    }
+}
+

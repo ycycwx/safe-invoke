@@ -1,0 +1,32 @@
+{
+    "name": "safe-invoke",
+    "version": "0.0.1",
+    "description": "safely call function to avoid \"&&\" hell",
+    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ycycwx/safe-invoke.git"
+    },
+    "author": "ycy",
+    "license": "MIT",
+    "scripts": {
+        "lint": "fecs --type=js --rule",
+        "test": "jest --coverage --no-cache",
+        "clean": "rm -rf dist",
+        "build": "rollup -cm -n safeInvoke -f umd -i src/index.js -o dist/index.js",
+        "prebuild": "npm run clean && npm run lint",
+        "prepublish": "npm run build"
+    },
+    "devDependencies": {
+        "babel-plugin-transform-function-bind": "^6.22.0",
+        "babel-preset-env": "^1.4.0",
+        "fecs": "^1.2.2",
+        "jest": "^19.0.2",
+        "rollup": "^0.41.6",
+        "rollup-plugin-babel": "^2.7.1",
+        "rollup-plugin-uglify": "^1.0.2"
+    }
+}
