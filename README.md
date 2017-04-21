@@ -4,6 +4,8 @@
 [![NPM downloads](https://img.shields.io/npm/dm/save-invoke.svg?style=flat)](https://npmjs.com/package/save-invoke)
 [![CircleCI](https://img.shields.io/circleci/project/ycycwx/safe-invoke/master.svg?style=flat)](https://circleci.com/gh/ycycwx/safe-invoke)
 
+Tiny function used to avoid "&&" hell.
+
 ## Install
 
 ``` bash
@@ -16,7 +18,7 @@ npm i --save safe-invoke
 
 ## How to use
 
-Suppose we have an object like this
+Suppose we have an object like this.
 
 ``` js
 let age = {
@@ -63,7 +65,7 @@ age
     && age.muv.luv[2].alternative('オルタネイティヴ4', '桜花作戦');
 ```
 
-**Now** we can write instead:
+**Now** we can write instead.
 
 ``` js
 import safeInvoke from 'safe-invoke';
