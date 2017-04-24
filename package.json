@@ -1,6 +1,6 @@
 {
     "name": "safe-invoke",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "safely call function to avoid \"&&\" hell",
     "main": "dist/index.js",
     "files": [
