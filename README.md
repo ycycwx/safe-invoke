@@ -77,7 +77,7 @@ safeInvoke(age, 'muv.luv.2.alternative', 'オルタネイティヴ4', '桜花作
 
 ## Tips
 
-If key of object contains `.` self, we should change secend argument (`path`) with array of string like below.
+If key of object contains `.` self, we should change second argument (`path`) with array of string like below.
 
 ``` js
 let obj = {
