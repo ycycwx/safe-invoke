@@ -13,6 +13,8 @@ let multiArgs = jest.fn();
 
 let singleArgs = jest.fn();
 
+let arrayPath = jest.fn();
+
 let obj = {
     a: noArgs,
     b: {
@@ -27,7 +29,12 @@ let obj = {
             g: multiArgs
         }
     ],
-    h: 'not a function'
+    h: 'not a function',
+    i: {
+        '3.5': {
+            'j.k': arrayPath
+        }
+    }
 };
 
 test('shallow obj with no argument', () => {
@@ -49,6 +56,12 @@ test('array in obj && multiple arguments', () => {
     expect(multiArgs).toBeCalledWith('multi', 'argument');
 });
 
+test('array of key path argument', () => {
+    safeInvoke(obj, ['i', '3.5', 'j.k']);
+    expect(arrayPath.mock.calls.length).toBe(1);
+    expect(arrayPath.mock.calls[0]).toEqual([]);
+});
+
 test('no error to throw', () => {
     expect(() => safeInvoke()).not.toThrow();
     expect(() => safeInvoke(obj)).not.toThrow();
@@ -58,6 +71,8 @@ test('no error to throw', () => {
     expect(() => safeInvoke(undefined)).not.toThrow();
     expect(() => safeInvoke(undefined, 'foo.bar')).not.toThrow();
     expect(() => safeInvoke(null)).not.toThrow();
+    expect(() => safeInvoke(obj, null)).not.toThrow();
+    expect(() => safeInvoke(obj, undefined)).not.toThrow();
     expect(() => safeInvoke(new Date())).not.toThrow();
 });
 
