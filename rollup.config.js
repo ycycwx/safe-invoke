@@ -4,16 +4,16 @@
  */
 
 import babel from 'rollup-plugin-babel';
-import uglify from 'rollup-plugin-uglify';
+import {terser} from 'rollup-plugin-terser';
 
 export default {
     plugins: [
         babel({
             babelrc: false,
-            presets: [['env', {loose: true, modules: false}]],
-            plugins: ['transform-function-bind']
+            presets: [['@babel/preset-env', {loose: true, modules: false}]],
+            plugins: ['@babel/plugin-proposal-function-bind']
         }),
-        uglify()
+        terser()
     ]
 };
 
