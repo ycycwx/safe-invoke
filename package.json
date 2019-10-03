@@ -13,22 +13,22 @@
     "author": "ycy",
     "license": "MIT",
     "scripts": {
-        "lint": "fecs --type=js --rule",
-        "test": "jest --coverage --no-cache",
-        "clean": "rm -rf dist",
         "build": "rollup -cm -n safeInvoke -f umd -i src/index.js -o dist/index.js",
-        "prebuild": "npm run clean && npm run lint",
-        "prepublish": "npm run build"
+        "clean": "rm -rf dist",
+        "prebuild": "npm run clean",
+        "prepublish": "npm run build",
+        "test": "jest --coverage --no-cache"
     },
     "devDependencies": {
-        "@babel/core": "^7.6.0",
-        "@babel/plugin-proposal-function-bind": "^7.2.0",
-        "@babel/preset-env": "^7.6.0",
+        "@babel/core": "^7.6.2",
+        "@babel/preset-env": "^7.6.2",
         "babel-core": "^7.0.0-bridge.0",
         "babel-jest": "^24.9.0",
-        "fecs": "^1.6.4",
+        "commitizen": "^4.0.3",
+        "cz-conventional-changelog": "^3.0.2",
+        "husky": "^3.0.8",
         "jest": "^24.9.0",
-        "rollup": "^1.21.3",
+        "rollup": "^1.22.0",
         "rollup-plugin-babel": "^4.3.3",
         "rollup-plugin-terser": "^5.1.2"
     }
