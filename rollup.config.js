@@ -10,10 +10,8 @@ export default {
     plugins: [
         babel({
             babelrc: false,
-            presets: [['@babel/preset-env', {loose: true, modules: false}]],
-            plugins: ['@babel/plugin-proposal-function-bind']
+            presets: [['@babel/preset-env', {loose: true, modules: false}]]
         }),
         terser()
     ]
 };
-

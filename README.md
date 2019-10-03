@@ -3,6 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/safe-invoke.svg?style=flat)](https://npmjs.com/package/safe-invoke)
 [![NPM downloads](https://img.shields.io/npm/dm/safe-invoke.svg?style=flat)](https://npmjs.com/package/safe-invoke)
 [![CircleCI](https://circleci.com/gh/ycycwx/safe-invoke/tree/master.svg?style=shield)](https://circleci.com/gh/ycycwx/safe-invoke)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Tiny function used to avoid "&&" hell.
 

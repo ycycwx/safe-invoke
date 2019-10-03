@@ -34,5 +34,5 @@
 export default function safeInvoke(obj, path, ...args) {
     let [last, ...head] = (Array.isArray(path) ? path : (path || '').split('.')).reverse();
     let initial = head.reduceRight((prev, part) => prev ? prev[part] : prev, obj);
-    initial && typeof initial[last] === 'function' && ::initial[last](...args);
+    initial && typeof initial[last] === 'function' && initial[last].call(initial[last], ...args);
 }
