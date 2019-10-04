@@ -17,6 +17,7 @@
         "clean": "rm -rf dist",
         "prebuild": "npm run clean",
         "prepublish": "npm run build",
+        "release": "HUSKY_SKIP_HOOKS=1 standard-version",
         "test": "jest --coverage --no-cache"
     },
     "devDependencies": {
@@ -30,6 +31,7 @@
         "jest": "^24.9.0",
         "rollup": "^1.22.0",
         "rollup-plugin-babel": "^4.3.3",
-        "rollup-plugin-terser": "^5.1.2"
+        "rollup-plugin-terser": "^5.1.2",
+        "standard-version": "^7.0.0"
     }
 }
