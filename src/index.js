@@ -32,7 +32,7 @@
  * @param {...*} args extra arguments
  */
 export default function safeInvoke(obj, path, ...args) {
-    let [last, ...head] = (Array.isArray(path) ? path : (path || '').split('.')).reverse();
-    let initial = head.reduceRight((prev, part) => prev ? prev[part] : prev, obj);
+    const [last, ...head] = (Array.isArray(path) ? path : (path || '').split('.')).reverse();
+    const initial = head.reduceRight((prev, part) => prev ? prev[part] : prev, obj);
     initial && typeof initial[last] === 'function' && initial[last].call(initial[last], ...args);
 }
