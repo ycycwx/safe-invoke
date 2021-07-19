@@ -2,14 +2,14 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:10.15.3
+      - image: circleci/node:14.15.4
     steps:
       - checkout
       - run: yarn
       - run: yarn run build
   test:
     docker:
-      - image: circleci/node:10.15.3
+      - image: circleci/node:14.15.4
     steps:
       - checkout
       - run: yarn
