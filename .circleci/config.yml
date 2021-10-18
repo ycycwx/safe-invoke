@@ -8,10 +8,10 @@ jobs:
       - run:
           name: install pnpm
           command: sudo npm install -g pnpm
-      - run: null
+      - run:
           name: pnpm-install
           command: pnpm install --prefer-frozen-lockfile
-      - run: null
+      - run:
           name: build
           command: pnpm run build
   test:
@@ -19,13 +19,13 @@ jobs:
       - image: 'circleci/node:16.8.0'
     steps:
       - checkout
-      - run: null
+      - run:
           name: install pnpm
           command: sudo npm install -g pnpm
-      - run: null
+      - run:
           name: pnpm-install
           command: pnpm install --prefer-frozen-lockfile
-      - run: null
+      - run:
           name: build
           command: pnpm run test
 workflows:
