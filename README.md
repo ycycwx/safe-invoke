@@ -10,11 +10,14 @@ Tiny function used to avoid "&&" hell.
 ## Install
 
 ``` bash
+# use npm
+npm i --save safe-invoke
+
 # use yarn
 yarn add safe-invoke
 
-# use npm
-npm i --save safe-invoke
+# use pnpm
+pnpm i -S safe-invoke
 ```
 
 ## How to use

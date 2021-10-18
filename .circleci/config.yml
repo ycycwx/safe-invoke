@@ -2,18 +2,32 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:14.15.4
+      - image: circleci/node:16.8.0
     steps:
       - checkout
-      - run: yarn
-      - run: yarn run build
+      - run:
+        name: install pnpm
+        command: sudo npm install -g pnpm
+      - run:
+        name: pnpm-install
+        command: pnpm install --prefer-frozen-lockfile
+      - run:
+        name: build
+        command: pnpm run build
   test:
     docker:
-      - image: circleci/node:14.15.4
+      - image: circleci/node:16.8.0
     steps:
       - checkout
-      - run: yarn
-      - run: yarn test
+      - run:
+        name: install pnpm
+        command: sudo npm install -g pnpm
+      - run:
+        name: pnpm-install
+        command: pnpm install --prefer-frozen-lockfile
+      - run:
+        name: build
+        command: pnpm run test
 workflows:
   version: 2
   build_and_test:
