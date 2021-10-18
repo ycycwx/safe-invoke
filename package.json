@@ -15,8 +15,8 @@
     "scripts": {
         "build": "rollup -cm -n safeInvoke -f umd -i src/index.js -o dist/index.js",
         "clean": "rm -rf dist",
-        "prebuild": "yarn run clean",
-        "prepublish": "yarn run build",
+        "prebuild": "pnpm run clean",
+        "prepublish": "pnpm run build",
         "release": "standard-version",
         "test": "jest --coverage --no-cache",
         "prepare": "husky install"
