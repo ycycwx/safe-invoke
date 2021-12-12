@@ -17,7 +17,7 @@ npm i --save safe-invoke
 yarn add safe-invoke
 
 # use pnpm
-pnpm i -S safe-invoke
+pnpm add safe-invoke
 ```
 
 ## How to use
