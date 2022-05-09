@@ -9,7 +9,7 @@ specifiers:
   '@types/node': 17.0.31
   babel-jest: 28.1.0
   commitizen: 4.2.4
-  husky: 7.0.4
+  husky: 8.0.0
   jest: 28.1.0
   rollup: 2.72.1
   rollup-plugin-terser: 7.0.2
@@ -24,7 +24,7 @@ devDependencies:
   '@types/node': 17.0.31
   babel-jest: 28.1.0_@babel+core@7.17.10
   commitizen: 4.2.4
-  husky: 7.0.4
+  husky: 8.0.0
   jest: 28.1.0_@types+node@17.0.31
   rollup: 2.72.1
   rollup-plugin-terser: 7.0.2_rollup@2.72.1
@@ -2982,9 +2982,9 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: true
 
-  /husky/7.0.4:
-    resolution: {integrity: sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==}
-    engines: {node: '>=12'}
+  /husky/8.0.0:
+    resolution: {integrity: sha512-4qbE/5dzNDNxFEkX9MNRPKl5+omTXQzdILCUWiqG/lWIAioiM5vln265/l6I2Zx8gpW8l1ukZwGQeCFbBZ6+6w==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
