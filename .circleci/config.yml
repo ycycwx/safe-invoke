@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: install pnpm
-          command: sudo npm install -g pnpm
+          command: npm install -g pnpm
       - run:
           name: pnpm-install
           command: pnpm install --prefer-frozen-lockfile
@@ -21,7 +21,7 @@ jobs:
       - checkout
       - run:
           name: install pnpm
-          command: sudo npm install -g pnpm
+          command: npm install -g pnpm
       - run:
           name: pnpm-install
           command: pnpm install --prefer-frozen-lockfile
