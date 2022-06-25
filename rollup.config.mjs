@@ -1,11 +1,11 @@
 /**
- * @file rollup.config.js
+ * @file rollup.config.mjs
  * @author ycy
  */
 
 // @ts-check
 
-import babel from '@rollup/plugin-babel';
+import {babel} from '@rollup/plugin-babel';
 import {terser} from 'rollup-plugin-terser';
 
 export default {
