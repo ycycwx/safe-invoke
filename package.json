@@ -28,10 +28,10 @@
         "@commitlint/config-conventional": "17.0.3",
         "@rollup/plugin-babel": "5.3.1",
         "@types/node": "18.0.0",
-        "babel-jest": "28.1.1",
+        "babel-jest": "28.1.2",
         "commitizen": "4.2.4",
         "husky": "8.0.1",
-        "jest": "28.1.1",
+        "jest": "28.1.2",
         "rollup": "2.75.7",
         "rollup-plugin-terser": "7.0.2",
         "standard-version": "9.5.0"
