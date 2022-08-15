@@ -16,12 +16,12 @@ jobs:
           command: pnpm run build
   test:
     docker:
-      - image: 'cimg/node:18.4'
+      - image: 'cimg/node:18.7'
     steps:
       - checkout
       - run:
           name: install pnpm
-          command: npm install -g pnpm
+          command: sudo npm install -g pnpm
       - run:
           name: pnpm-install
           command: pnpm install --prefer-frozen-lockfile
