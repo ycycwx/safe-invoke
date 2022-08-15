@@ -16,7 +16,7 @@ jobs:
           command: pnpm run build
   test:
     docker:
-      - image: 'cimg/node:18.4'
+      - image: 'cimg/node:18.7'
     steps:
       - checkout
       - run:
