@@ -7,7 +7,7 @@ specifiers:
   '@commitlint/config-conventional': 17.3.0
   '@rollup/plugin-babel': 5.3.1
   babel-jest: 29.3.1
-  commitizen: 4.2.5
+  commitizen: 4.2.6
   husky: 8.0.2
   jest: 29.3.1
   rollup: 2.79.1
@@ -21,7 +21,7 @@ devDependencies:
   '@commitlint/config-conventional': 17.3.0
   '@rollup/plugin-babel': 5.3.1_opjstonlpkhafnz76jsxdwq25a
   babel-jest: 29.3.1_@babel+core@7.20.5
-  commitizen: 4.2.5
+  commitizen: 4.2.6
   husky: 8.0.2
   jest: 29.3.1
   rollup: 2.79.1
@@ -2233,8 +2233,8 @@ packages:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
 
-  /commitizen/4.2.5:
-    resolution: {integrity: sha512-9sXju8Qrz1B4Tw7kC5KhnvwYQN88qs2zbiB8oyMsnXZyJ24PPGiNM3nHr73d32dnE3i8VJEXddBFIbOgYSEXtQ==}
+  /commitizen/4.2.6:
+    resolution: {integrity: sha512-RyTM+EiD9GO01DJUn9MRRAet3XUHGfoUZoksLfr+1ym1Xt2q5EYJs9Fg2BtKSb5Mo53i0BtMBmWMHQXVlZ/L9w==}
     engines: {node: '>= 12'}
     hasBin: true
     dependencies:
@@ -2520,7 +2520,7 @@ packages:
     engines: {node: '>= 10'}
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.2.5
+      commitizen: 4.2.6
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
