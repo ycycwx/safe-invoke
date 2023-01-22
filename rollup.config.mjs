@@ -6,9 +6,12 @@
 // @ts-check
 
 import {babel} from '@rollup/plugin-babel';
-import {terser} from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 
-export default {
+/**
+ * @type {import('rollup').RollupOptions}
+ */
+const config = {
     plugins: [
         babel({
             babelrc: false,
@@ -18,3 +21,5 @@ export default {
         terser()
     ]
 };
+
+export default config;
