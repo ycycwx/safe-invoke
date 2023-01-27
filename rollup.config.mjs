@@ -11,7 +11,7 @@ import terser from '@rollup/plugin-terser';
 /**
  * @type {import('rollup').RollupOptions}
  */
-const config = {
+export default {
     plugins: [
         babel({
             babelrc: false,
@@ -21,5 +21,3 @@ const config = {
         terser()
     ]
 };
-
-export default config;
