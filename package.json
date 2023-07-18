@@ -22,8 +22,8 @@
         "prepare": "husky install"
     },
     "devDependencies": {
-        "@babel/core": "7.22.6",
-        "@babel/preset-env": "7.22.6",
+        "@babel/core": "7.22.9",
+        "@babel/preset-env": "7.22.9",
         "@commitlint/cli": "17.6.6",
         "@commitlint/config-conventional": "17.6.6",
         "@rollup/plugin-babel": "6.0.3",
