@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: 'cimg/node:20.4'
+      - image: 'cimg/node:20.5'
     steps:
       - checkout
       - run:
@@ -16,7 +16,7 @@ jobs:
           command: pnpm run build
   test:
     docker:
-      - image: 'cimg/node:20.4'
+      - image: 'cimg/node:20.5'
     steps:
       - checkout
       - run:
