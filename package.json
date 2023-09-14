@@ -32,7 +32,7 @@
         "commitizen": "4.3.0",
         "husky": "8.0.3",
         "jest": "29.7.0",
-        "rollup": "3.29.0",
+        "rollup": "3.29.1",
         "standard-version": "9.5.0"
     }
 }
