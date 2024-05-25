@@ -3,6 +3,7 @@
     "version": "0.1.4",
     "description": "safely call function to avoid \"&&\" hell",
     "main": "dist/index.js",
+    "type": "module",
     "files": [
         "dist"
     ],
@@ -18,21 +19,18 @@
         "prebuild": "pnpm run clean",
         "prepublish": "pnpm run build",
         "release": "standard-version",
-        "test": "jest --coverage --no-cache",
+        "test": "vitest run --coverage",
         "prepare": "husky"
     },
     "devDependencies": {
-        "@babel/core": "7.25.2",
-        "@babel/preset-env": "7.25.4",
-        "@commitlint/cli": "19.4.1",
-        "@commitlint/config-conventional": "19.4.1",
-        "@rollup/plugin-babel": "6.0.4",
+        "@commitlint/cli": "19.4.0",
+        "@commitlint/config-conventional": "19.2.2",
         "@rollup/plugin-terser": "^0.4.4",
-        "babel-jest": "29.7.0",
+        "@vitest/coverage-v8": "^2.0.5",
         "commitizen": "4.3.0",
         "husky": "9.1.5",
-        "jest": "29.7.0",
-        "rollup": "4.21.2",
-        "standard-version": "9.5.0"
+        "rollup": "4.21.0",
+        "standard-version": "9.5.0",
+        "vitest": "^2.0.5"
     }
 }
