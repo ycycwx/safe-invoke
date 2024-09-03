@@ -1,9 +1,17 @@
 {
+    "$schema": "https://json.schemastore.org/package.json",
     "name": "safe-invoke",
     "version": "0.1.4",
     "description": "safely call function to avoid \"&&\" hell",
-    "main": "dist/index.js",
+    "main": "dist/index.min.js",
     "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.min.js",
+            "require": "./dist/index.min.cjs",
+            "default": "./dist/index.umd.js"
+        }
+    },
     "files": [
         "dist"
     ],
@@ -13,8 +21,11 @@
     },
     "author": "ycy",
     "license": "MIT",
+    "engines": {
+        "node": ">=22"
+    },
     "scripts": {
-        "build": "rollup -cm -n safeInvoke -f umd -i src/index.js -o dist/index.js",
+        "build": "rollup -c",
         "clean": "rm -rf dist",
         "prebuild": "pnpm run clean",
         "prepublish": "pnpm run build",
@@ -23,13 +34,13 @@
         "prepare": "husky"
     },
     "devDependencies": {
-        "@commitlint/cli": "19.4.0",
-        "@commitlint/config-conventional": "19.2.2",
+        "@commitlint/cli": "19.4.1",
+        "@commitlint/config-conventional": "19.4.1",
         "@rollup/plugin-terser": "^0.4.4",
         "@vitest/coverage-v8": "^2.0.5",
         "commitizen": "4.3.0",
         "husky": "9.1.5",
-        "rollup": "4.21.0",
+        "rollup": "4.21.2",
         "standard-version": "9.5.0",
         "vitest": "^2.0.5"
     }
