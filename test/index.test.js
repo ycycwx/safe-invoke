@@ -3,38 +3,37 @@
  * @author ycy
  */
 
-/* global jest, test */
-
+import {expect, vi, test} from 'vitest';
 import safeInvoke from '../src';
 
-let noArgs = jest.fn();
+const noArgs = vi.fn();
 
-let multiArgs = jest.fn();
+const multiArgs = vi.fn();
 
-let singleArgs = jest.fn();
+const singleArgs = vi.fn();
 
-let arrayPath = jest.fn();
+const arrayPath = vi.fn();
 
-let obj = {
+const obj = {
     a: noArgs,
     b: {
         c: {
             d: {
-                e: singleArgs
-            }
-        }
+                e: singleArgs,
+            },
+        },
     },
     f: [
         {
-            g: multiArgs
-        }
+            g: multiArgs,
+        },
     ],
     h: 'not a function',
     i: {
-        '3.5': {
-            'j.k': arrayPath
-        }
-    }
+        3.5: {
+            'j.k': arrayPath,
+        },
+    },
 };
 
 test('shallow obj with no argument', () => {
@@ -75,4 +74,3 @@ test('no error to throw', () => {
     expect(() => safeInvoke(obj, undefined)).not.toThrow();
     expect(() => safeInvoke(new Date())).not.toThrow();
 });
-

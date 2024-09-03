@@ -3,21 +3,31 @@
  * @author ycy
  */
 
-// @ts-check
-
-import {babel} from '@rollup/plugin-babel';
 import terser from '@rollup/plugin-terser';
+import pkg from './package.json' with {type: 'json'};
 
 /**
  * @type {import('rollup').RollupOptions}
  */
 export default {
-    plugins: [
-        babel({
-            babelrc: false,
-            babelHelpers: 'bundled',
-            presets: [['@babel/preset-env', {loose: true, modules: false}]]
-        }),
-        terser()
-    ]
+    input: './src/index.js',
+    output: [
+        {
+            file: pkg.exports['.'].require,
+            format: 'cjs',
+            sourcemap: true,
+        },
+        {
+            file: pkg.exports['.'].import,
+            format: 'es',
+            sourcemap: true,
+        },
+        {
+            file: pkg.exports['.'].default,
+            format: 'umd',
+            name: 'safeInvoke',
+            sourcemap: true,
+        },
+    ],
+    plugins: [terser()],
 };
