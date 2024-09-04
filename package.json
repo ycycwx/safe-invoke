@@ -17,7 +17,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/ycycwx/safe-invoke.git"
+        "url": "git+https://github.com/ycycwx/safe-invoke.git"
     },
     "author": "ycy",
     "license": "MIT",
