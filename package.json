@@ -29,7 +29,7 @@
         "clean": "rm -rf dist",
         "prebuild": "pnpm run clean",
         "prepublish": "pnpm run build",
-        "release": "standard-version",
+        "release": "semantic-release",
         "test": "vitest run --coverage",
         "prepare": "husky"
     },
@@ -37,10 +37,12 @@
         "@commitlint/cli": "19.4.1",
         "@commitlint/config-conventional": "19.4.1",
         "@rollup/plugin-terser": "^0.4.4",
+        "@semantic-release/changelog": "6.0.3",
+        "@semantic-release/git": "10.0.1",
         "@vitest/coverage-v8": "^2.0.5",
         "husky": "9.1.5",
         "rollup": "4.21.2",
-        "standard-version": "9.5.0",
+        "semantic-release": "24.1.0",
         "vitest": "^2.0.5"
     }
 }
