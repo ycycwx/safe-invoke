@@ -35,14 +35,14 @@
         "prepare": "husky"
     },
     "devDependencies": {
-        "@commitlint/cli": "19.5.0",
-        "@commitlint/config-conventional": "19.5.0",
+        "@commitlint/cli": "19.6.0",
+        "@commitlint/config-conventional": "19.6.0",
         "@rollup/plugin-terser": "^0.4.4",
         "@semantic-release/changelog": "6.0.3",
         "@semantic-release/git": "10.0.1",
         "@vitest/coverage-v8": "^2.1.5",
         "husky": "9.1.7",
-        "rollup": "4.27.2",
+        "rollup": "4.27.3",
         "semantic-release": "24.2.0",
         "vitest": "^2.1.5"
     }
