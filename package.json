@@ -40,10 +40,10 @@
         "@rollup/plugin-terser": "^0.4.4",
         "@semantic-release/changelog": "6.0.3",
         "@semantic-release/git": "10.0.1",
-        "@vitest/coverage-v8": "^2.1.5",
+        "@vitest/coverage-v8": "^2.1.6",
         "husky": "9.1.7",
-        "rollup": "4.27.3",
+        "rollup": "4.27.4",
         "semantic-release": "24.2.0",
-        "vitest": "^2.1.5"
+        "vitest": "^2.1.6"
     }
 }
