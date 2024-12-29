@@ -24,7 +24,7 @@
     "engines": {
         "node": ">=22"
     },
-    "packageManager": "pnpm@9.15.1",
+    "packageManager": "pnpm@9.15.2",
     "scripts": {
         "build": "rollup -c",
         "clean": "rm -rf dist",
