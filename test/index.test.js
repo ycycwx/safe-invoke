@@ -38,7 +38,7 @@ const obj = {
 
 test('shallow obj with no argument', () => {
     safeInvoke(obj, 'a');
-    expect(noArgs).toBeCalled();
+    expect(noArgs).toHaveBeenCalled();
     expect(noArgs.mock.calls.length).toBe(1);
     expect(noArgs.mock.calls[0]).toEqual([]);
 });
@@ -46,13 +46,13 @@ test('shallow obj with no argument', () => {
 test('deep obj with single argument', () => {
     safeInvoke(obj, 'b.c.d.e', 'single');
     expect(singleArgs.mock.calls.length).toBe(1);
-    expect(singleArgs).toBeCalledWith('single');
+    expect(singleArgs).toHaveBeenCalledWith('single');
 });
 
 test('array in obj && multiple arguments', () => {
     safeInvoke(obj, 'f.0.g', 'multi', 'argument');
     expect(multiArgs.mock.calls.length).toBe(1);
-    expect(multiArgs).toBeCalledWith('multi', 'argument');
+    expect(multiArgs).toHaveBeenCalledWith('multi', 'argument');
 });
 
 test('array of key path argument', () => {
