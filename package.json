@@ -24,7 +24,7 @@
     "engines": {
         "node": ">=22"
     },
-    "packageManager": "pnpm@10.6.3",
+    "packageManager": "pnpm@10.6.4",
     "scripts": {
         "build": "rollup -c",
         "clean": "rm -rf dist",
@@ -40,11 +40,11 @@
         "@rollup/plugin-terser": "^0.4.4",
         "@semantic-release/changelog": "6.0.3",
         "@semantic-release/git": "10.0.1",
-        "@vitest/coverage-v8": "^3.0.2",
+        "@vitest/coverage-v8": "^3.0.9",
         "husky": "9.1.7",
-        "rollup": "4.35.0",
+        "rollup": "4.36.0",
         "semantic-release": "24.2.3",
-        "vitest": "^3.0.2"
+        "vitest": "^3.0.9"
     },
     "pnpm": {
         "onlyBuiltDependencies": [
