@@ -4,6 +4,7 @@ export default defineConfig({
     test: {
         coverage: {
             include: ['src/**'],
+            provider: 'v8',
         },
     },
 });
