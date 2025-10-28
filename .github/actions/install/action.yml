@@ -12,7 +12,7 @@ runs:
     - name: Setup Node.js
       uses: actions/setup-node@v6
       with:
-        node-version: 22
+        node-version: 24
     - name: Cache pnpm modules
       uses: actions/cache@v4
       with:
