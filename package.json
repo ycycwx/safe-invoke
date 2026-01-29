@@ -40,11 +40,11 @@
         "@rollup/plugin-terser": "^0.4.4",
         "@semantic-release/changelog": "6.0.3",
         "@semantic-release/git": "10.0.1",
-        "@vitest/coverage-v8": "^4.0.1",
+        "@vitest/coverage-v8": "^4.0.18",
         "husky": "9.1.7",
-        "rollup": "4.55.1",
+        "rollup": "4.57.0",
         "semantic-release": "25.0.2",
-        "vitest": "^4.0.1"
+        "vitest": "^4.0.18"
     },
     "pnpm": {
         "onlyBuiltDependencies": [
