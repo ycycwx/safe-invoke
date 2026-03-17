@@ -8,7 +8,7 @@ runs:
       with:
         fetch-depth: 0
     - name: Setup pnpm
-      uses: pnpm/action-setup@v4
+      uses: pnpm/action-setup@v5
     - name: Setup Node.js
       uses: actions/setup-node@v6
       with:
@@ -21,7 +21,7 @@ runs:
         restore-keys: |
           ${{ runner.os }}-
     - name: Setup PNPM
-      uses: pnpm/action-setup@v4.4.0
+      uses: pnpm/action-setup@v5.0.0
       with:
         run_install: |
           - recursive: true
