@@ -45,10 +45,5 @@
         "rollup": "4.63.6",
         "semantic-release": "25.0.9",
         "vitest": "^4.1.4"
-    },
-    "pnpm": {
-        "onlyBuiltDependencies": [
-            "esbuild"
-        ]
     }
 }

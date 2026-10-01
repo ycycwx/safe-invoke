@@ -25,6 +25,7 @@ nbproject
 Thumbs.db
 
 # Folders to ignore
+.pnpm-store/
 node_modules
 coverage
 dist
